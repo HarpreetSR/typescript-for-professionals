@@ -19,7 +19,7 @@ type MyShape =
   | MyRectangle
   | MyCircle;
 
-function area(shape: MyShape){
+function myArea(shape: MyShape){
   if('size' in shape){
     return shape.size * shape.size;
   }
@@ -36,5 +36,12 @@ function area(shape: MyShape){
   return _ensureAllCasesAreHandled
 }
 
-area({ size: 2 }); // 4
-area({ width:3, height: 4 }); // 12
+myArea({
+  size: 2,
+  kind: "square"
+}); // 4
+myArea({
+  width: 3,
+  height: 4,
+  kind: "rectangle"
+}); // 12
