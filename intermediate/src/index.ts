@@ -1,2 +1,2 @@
-const message: string = 'Welcome to Intermediate Chapter...';
+const message: string = 'Welcome to Intermediate section...';
 console.log(message);
